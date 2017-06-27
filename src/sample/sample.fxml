@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="487.0" prefWidth="742.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <Button layoutY="452.0" mnemonicParsing="false" onAction="#btn" prefHeight="25.0" prefWidth="149.0" text="Расчитать" />
+        <TableView fx:id="tableUsers" prefHeight="340.0" prefWidth="742.0">
+            <columns>
+                <TableColumn fx:id="I" prefWidth="75.0" text="Номер шага" />
+                <TableColumn fx:id="K" prefWidth="75.0" text="Компьютер" />
+                <TableColumn fx:id="TIP" prefWidth="75.0" text="Т инт. прих." />
+                <TableColumn fx:id="TIO" prefWidth="75.0" text="Т инт. обс." />
+                <TableColumn fx:id="TP" prefWidth="75.0" text="Т прих." />
+                <TableColumn fx:id="TNO" prefWidth="75.0" text="Т нач. обс." />
+                <TableColumn fx:id="TOO" prefWidth="75.0" text="Т ок. обс." />
+                <TableColumn fx:id="TO" prefWidth="75.0" text="Т ож." />
+                <TableColumn fx:id="TPR" prefWidth="75.0" text="Т простоя" />
+            </columns>
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+            </columnResizePolicy>
+        </TableView>
+        <TextField fx:id="tip" layoutY="382.0" />
+        <TextField fx:id="tio" layoutX="250.0" layoutY="382.0" />
+        <TextField fx:id="tio2" layoutX="475.0" layoutY="382.0" />
+        <Label layoutY="358.0" prefHeight="17.0" prefWidth="87.0" text="Т инт. прих." />
+        <Label layoutX="250.0" layoutY="358.0" text="Т инт. обс." />
+        <Label layoutX="475.0" layoutY="358.0" text="Т инт. обс. 2" />
+        <Label layoutY="415.0" text="Т ож. ср." />
+        <Label fx:id="tos" layoutX="121.0" layoutY="415.0" text=" " />
+        <Label layoutX="250.0" layoutY="415.0" text="Р простоя 1комп." />
+        <Label fx:id="pp1c" layoutX="371.0" layoutY="415.0" text=" " />
+        <Label layoutX="475.0" layoutY="415.0" text="Р простоя 2комп." />
+        <Label fx:id="pp2c" layoutX="596.0" layoutY="415.0" text=" " />
+    </children>
+</AnchorPane>
